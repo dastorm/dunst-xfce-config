@@ -1,2 +1,2 @@
 # dunst-xfce-config
-dunst config file for xfce desktop
+This is a dunst config file that is meant to make dunst integrate nicely in the xfce desktop environment
