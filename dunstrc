@@ -13,8 +13,8 @@
 
     show_indicators=false
     icon_position=left
-    icon_folders = "/usr/share/icons/Moka/48x48/devices/:/usr/share/icons/Moka/48x48/status"
-#"/usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/"
+
+    icon_folders = "/usr/share/icons/gnome/48x48/status/:/usr/share/icons/gnome/48x48/devices/"
     max_icon_size=40
     shrink=yes
 
