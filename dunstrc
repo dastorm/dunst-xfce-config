@@ -1,3 +1,4 @@
+
 [global]
     font = Arial 11 #Monospace 10
 
@@ -10,13 +11,14 @@
     # for a complete reference see http://developer.gnome.org/pango/stable/PangoMarkupFormat.html
     # If markup is not allowed, those tags will be stripped out of the message.
     allow_markup = yes
+    plain_text = no
 
     show_indicators=false
     icon_position=left
-
-    icon_folders = "/usr/share/icons/gnome/48x48/status/:/usr/share/icons/gnome/48x48/devices/"
+    icon_folders = "/usr/share/icons/Moka/48x48/devices/:/usr/share/icons/Moka/48x48/status/:/usr/share/icons/Faba/48x48/notifications"
+#"/usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/"
     max_icon_size=40
-    shrink=yes
+    shrink=no
 
     # The format of the message. Possible variables are:
     #   %a  appname
@@ -67,11 +69,11 @@
     # right side of the screen.  Y is measured from the top and down respectevly.
     # The width can be negative. In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "450x5-30+20"
+    geometry = "350x5-30+20"
 
     # The transparency of the window. range: [0; 100]
     # This option will only work if a compositing windowmanager is present (e.g. xcompmgr, compiz, etc..)
-    transparency = 20
+    transparency = 0
 
     # Don't remove messages, if the user is idle (no mouse or keyboard input)
     # for longer than idle_threshold seconds.
@@ -102,15 +104,15 @@
     # This adds empty space above and under the text.
     line_height = 0
 
-    # Draw a line of 'separatpr_height' pixel height between two notifications.
+    # Draw a line of 'separator_height' pixel height between two notifications.
     # Set to 0 to disable
     separator_height = 2
 
     # padding between text and separator
-    padding = 8
+    padding = 6
 
     # horizontal padding
-    horizontal_padding = 8
+    horizontal_padding = 6
 
     # Define a color for the separator.
     # possible values are:
@@ -189,9 +191,8 @@
 # NOTE: It might be helpful to run dunst -print in a terminal in order to find
 # fitting options for rules.
 
-#[espeak]
-#    summary = "*"
-#    script = dunst_espeak.sh
+#[volume.sh]
+    #script = /home/dstellati/Scripts/./volume.sh up
 
 #[script-test]
 #    summary = "*script*"
